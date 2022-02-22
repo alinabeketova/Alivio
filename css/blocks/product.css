@@ -1,0 +1,135 @@
+.product {
+    padding-top: 120px;
+    padding-bottom: 180px;
+}
+
+.produkt-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.product-content {
+    max-width: 584px;
+}
+
+.product-content-title {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 157%;
+}
+.product-content-title + * {
+    margin-top: 10px;
+}
+
+.product-content-subtitle {
+    font-family: Georgia, serif;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 157%;
+    color: #01996D;
+}
+
+.product-content-subtitle + * {
+    margin-top: 20px;
+}
+
+.product-content-text {
+    line-height: 144.5%;
+    max-width: 530px;
+}
+
+.product-content-text + * {
+     margin-top: 40px;
+
+}
+
+.product-content-btn {
+    display: flex;
+}
+
+.product-img-wrapper {
+    position: relative;
+    margin-right: 86px;
+    padding-left: 60px;
+    padding-bottom: 74px;
+}
+
+.product-content-subtitle {
+    font-family: Georgia, serif;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 157%;
+    color: #01996D;
+}
+
+.produkt-card {
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+}
+
+.product-img {
+    border-radius: 18px;
+}
+
+@media (max-width: 1299px) {
+    .product-img-wrapper {
+        flex: 1 0 auto;
+        flex-basis: 50%;
+    }
+    .product-content-subtitle {
+        font-size: 40px;
+        line-height: 130%;
+    }
+    .produkt-card {
+        top: 60%;
+    }
+    .product {
+        padding-top: 80px;
+    }
+}
+
+@media (max-width: 992px)  {
+    .product-content-subtitle {
+        font-size: 30px;
+    }
+    .produkt-row {
+        flex-direction: column-reverse;
+    }
+    .product {
+        padding-top: 40px;
+        padding-bottom: 80px;
+    }
+    .product-content {
+        margin-bottom: 40px;
+    }
+    .produkt-card {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .product-img-wrapper {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }    
+    .produkt-card {
+        /* top: 80%; */
+        position: relative;
+        z-index: 2;
+        margin-top: -10%;
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (max-width: 500px) {
+    .produkt-card {
+    margin-top: -30%;
+    }
+    .product {
+        padding-bottom: 40px;
+    }
+    .produkt-card {
+        margin: -30% 15px 0 15px;
+    }
+} 
